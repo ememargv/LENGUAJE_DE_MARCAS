@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pixel y Tinta | Comunidad de Ficción</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h1><u>Pixel y Tinta | Tu Punto de Encuentro con la Ficción</u></h1>
+
+    <p>Visita: <a href="https://www.youtube.com/watch?v=bvCsTca0uBc" target="_blank">Parodia canción Zelda</a> -Himno de nuestra comunidad</p>
+
+    <h2>Explora Mundos</h2>
+    <img src="pixel.jpg" alt="Logo de Pixel y Tinta, un control de mando y un libro estilizados" width="300">
+    <p>Bienvenido/a a la comunidad donde el juego, la lectura y el visionado se unen.</p>
+
+    <hr>
+
+    <h2>Formulario de Contacto - Únete a la Conversación</h2>
+    
+    <form action="/procesar-contacto" method="post">
+        <fieldset>
+            <legend>Información y Preferencias de Contacto</legend>
+
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefono">Teléfono (Opcional):</label><br>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}"><br><br>
+
+            <label for="fecha_nac">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecha_nac" name="fecha_nac"><br><br>
+
+            <p>¿Cuál es tu **principal interés** en Pixel y Tinta?</p>
+            <input type="radio" id="juegos" name="interes_principal" value="videojuegos">
+            <label for="juegos">Videojuegos</label><br>
+            <input type="radio" id="series_pelis" name="interes_principal" value="series_peliculas" checked>
+            <label for="series_pelis">Series/Películas</label><br>
+            <input type="radio" id="libros" name="interes_principal" value="libros">
+            <label for="libros">Libros</label><br><br>
+
+            <p>Selecciona los **tipos de noticias** que quieres recibir:</p>
+            <input type="checkbox" id="n_juegos" name="noticias" value="juegos" checked>
+            <label for="n_juegos">Novedades de Videojuegos</label><br>
+            <input type="checkbox" id="n_estrenos" name="noticias" value="estrenos">
+            <label for="n_estrenos">Estrenos de Cine y TV</label><br>
+            <input type="checkbox" id="n_libros" name="noticias" value="libros">
+            <label for="n_libros">Reseñas Literarias</label><br><br>
+            
+            <label for="plataforma_fav">Tu **Plataforma de Consumo** Favorita:</label><br>
+            <select id="plataforma_fav" name="plataforma_fav">
+                <option value="pc">PC/Steam</option>
+                <option value="ps_xbox">PlayStation/Xbox</option>
+                <option value="nintendo">Nintendo</option>
+                <option value="streaming" selected>Plataformas de Streaming (Netflix, Max, etc.)</option>
+                <option value="fisico">Libros Físicos/E-Readers</option>
+            </select><br><br>
+
+            <label for="mensaje">Tu Mensaje / Sugerencia:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="50" placeholder="Escribe aquí tu duda, sugerencia o comentario..."></textarea><br><br>
+
+            <input type="submit" value="Enviar Contacto">
+        </fieldset>
+    </form>
+
+</body>
+</html>
