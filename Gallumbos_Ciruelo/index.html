@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallumbos Ciruelo - Ropa interior masculina</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="cabecera"><header id="inicio" class="cabecera">
+    </header>
+        <div class="logo-container">
+            <img src="Gallumbos_Ciruelo.png" alt="Logo Gallumbos Ciruelo" class="logo">
+        </div>
+        <div class="titulo-container">
+            <h1>Gallumbos Ciruelo</h1>
+            <p class="eslogan">Donde la comodidad, se encuentra con lo inesperado</p>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre-nosotros" class="seccion-texto">
+            <h2>Sobre Gallumbos Ciruelo</h2>
+            <article>
+                <p>
+                    Somos una marca joven y atrevida. Gallumbos Ciruelo nace con la misión de redefinir la ropa interior masculina.
+                    Nuestro producto está dirigido al <strong>hombre moderno</strong> que no quiere sacrificar estilo por comodidad.
+                </p>
+                <p>
+                    A diferencia de otras marcas industriales, nosotros cuidamos cada costura y utilizamos tejidos sostenibles,
+                    creando una experiencia única de suavidad y soporte.
+                </p>
+            </article>
+        </section>
+
+        <section class="seccion-destacada">
+            <div class="caja-ventaja">
+                <h3>Diseño Ergonómico</h3>
+                <p>Nuestra tecnología "FreedomFit" se adapta a tu cuerpo sin apretar.</p>
+            </div>
+        </section>
+
+        <section id="productos" class="seccion-productos">
+            <h2>Nuestra Colección</h2>
+            <div class="contenedor-productos">
+                
+                <article class="producto">
+                    <span class="etiqueta-nuevo">Nuevo</span> 
+                    <figure>
+                        <img src="clasicociruelo.png" alt="Gallumbo Modelo Clásico">
+                        <figcaption>Modelo "El Clásico"</figcaption>
+                    </figure>
+                    <p class="descripcion">Boxer ajustado de algodón orgánico.</p>
+                    <span class="precio">15.99€</span>
+                </article>
+
+                <article class="producto">
+                    <figure>
+                        <img src="deportivociruelo.png" alt="Gallumbo Modelo Sport">
+                        <figcaption>Modelo "Sport Active"</figcaption>
+                    </figure>
+                    <p class="descripcion">Slip transpirable para deporte de alto impacto.</p>
+                    <span class="precio">12.50€</span>
+                </article>
+
+                <article class="producto">
+                    <figure>
+                        <img src="ciruelorelax.png" alt="Gallumbo Modelo Relax">
+                        <figcaption>Modelo "Domingo Relax"</figcaption>
+                    </figure>
+                    <p class="descripcion">Boxer suelto de tela suave para estar en casa.</p>
+                    <span class="precio">18.00€</span>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <h2>Contacta con nosotros</h2>
+            <form action="#" method="post" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="campo">
+                    <label for="tipo-consulta">Tipo de consulta:</label>
+                    <select id="tipo-consulta" name="tipo-consulta">
+                        <option value="general">Información general</option>
+                        <option value="pedido">Estado de mi pedido</option>
+                        <option value="devolucion">Devoluciones</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu consulta..."></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar consulta</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gallumbos Ciruelo. Todos los derechos reservados.</p>
+        <p>Marca registrada en España.</p>
+    </footer>
+
+</body>
+</html>
